@@ -7,11 +7,29 @@ import blue from "../sharks/Blueshark.jpg";
 import bonnethead from "../sharks/bonnetheadshark.jpg";
 import bull from "../sharks/bullshark.jpeg";
 import cookiecutter from "../sharks/Cookiecutter-shark.jpg";
+import goblin from "../sharks/goblinshark.jpeg";
+import greatwhite from "../sharks/greatwhiteshark.jpeg";
+import greenland from "../sharks/greenlandshark.jpeg";
+import greyreef from "../sharks/greyreefshark.jpeg";
+import hammerhead from "../sharks/hammerheadshark.jpeg";
+import horn from "../sharks/hornshark.jpeg";
+import megamouth from "../sharks/megamouthshark.jpeg";
+import nurse from "../sharks/nurseshark.jpeg";
+import porbeagle from "../sharks/porbeagleshark.jpeg";
+import reef from "../sharks/reefshark.jpeg";
+import salmon from "../sharks/salmonshark.jpeg";
+import sandtiger from "../sharks/sandtigershark.jpeg";
+import sixgill from "../sharks/sixgillshark.jpeg";
+import sleeper from "../sharks/sleepershark.jpeg";
+import spinner from "../sharks/spinnershark.jpeg";
+import tiger from "../sharks/tigershark.jpeg";
+import viper from "../sharks/vipershark.jpeg";
+import whale from "../sharks/whaleshark.jpeg";
+import zebra from "../sharks/zebrashark.jpeg";
 
 function SharkDetails() {
 
     const { id } = useParams();
-
     const [shark, setShark] = React.useState(null);
 
     React.useEffect(() => {
@@ -34,7 +52,26 @@ function SharkDetails() {
         "Blue Shark": blue,
         "Bonnethead Shark": bonnethead,
         "Bull Shark": bull,
-        "Cookiecutter Shark": cookiecutter
+        "Cookiecutter Shark": cookiecutter,
+        "Goblin Shark": goblin,
+        "Great White Shark": greatwhite,
+        "Greenland Shark": greenland,
+        "Grey Reef Shark": greyreef,
+        "Hammerhead Shark": hammerhead,
+        "Horn Shark": horn,
+        "Megamouth Shark": megamouth,
+        "Nurse Shark": nurse,
+        "Porbeagle Shark": porbeagle,
+        "Reef Shark": reef,
+        "Salmon Shark": salmon,
+        "Sand Tiger Shark": sandtiger,
+        "Sixgill Shark": sixgill,
+        "Sleeper Shark": sleeper,
+        "Spinner Shark": spinner,
+        "Tiger Shark": tiger,
+        "Viper Shark": viper,
+        "Whale Shark": whale,
+        "Zebra Shark": zebra
     };
 
     const image = sharkImages[shark.name];
