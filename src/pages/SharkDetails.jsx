@@ -36,7 +36,10 @@ function SharkDetails() {
 
         const getShark = async () => {
             const sharks = await fetchSharks();
-            setShark(sharks[id]);
+
+            const foundShark = sharks[Number(id)];
+
+            setShark(foundShark);
         };
 
         getShark();
